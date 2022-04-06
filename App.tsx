@@ -36,7 +36,7 @@ function DetailsScreen({navigation}: DetailsScreenProps) {
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <Pressable onPress={onClick}>
-        <Text>Details Screen</Text>
+        <Text>Details</Text>
       </Pressable>
     </View>
   );
