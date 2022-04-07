@@ -50,7 +50,7 @@ function App() {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{title: '홈화면'}}
+          options={{title: '홈'}}
         />
         <Stack.Screen name="Details">
           {props => <DetailsScreen {...props} />}
