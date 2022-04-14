@@ -99,7 +99,7 @@ function SignUp({navigation}: SignUpScreenProps) {
         <Text style={styles.label}>이름</Text>
         <TextInput
           style={styles.textInput}
-          placeholder="이름을 입력해주세요."
+          placeholder="이름을입력해주세요."
           placeholderTextColor="#666"
           onChangeText={onChangeName}
           value={name}
