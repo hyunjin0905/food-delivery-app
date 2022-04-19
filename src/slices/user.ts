@@ -1,9 +1,17 @@
 import {createSlice} from '@reduxjs/toolkit';
 
+//store -> reducer(root, state)
+
+// 리덕스는 구조가 단방향 데이터의 흐름을 분석
+// action : state 를 바꾸는 행위/동작
+// dispatch: 그 액션을 실제로 실행하는 함수
+// reducer: 액션이 실제로 실행되면 state를 바꾸는 로직
+
 const initialState = {
   name: '',
   email: '',
   accessToken: '',
+  money: 0,
 };
 const userSlice = createSlice({
   name: 'user',
@@ -14,8 +22,14 @@ const userSlice = createSlice({
       state.name = action.payload.name;
       state.accessToken = action.payload.accessToken;
     },
-  },
-  extraReducers: builder => {},
+    setAccessToken(state, action) {
+      state.accessToken = action.payload;
+    },
+    setMoney(state, action) {
+      state.money = action.payload;
+    },
+  }, // 동기액션
+  extraReducers: builder => {}, // 비동기 액션
 });
 
 export default userSlice;

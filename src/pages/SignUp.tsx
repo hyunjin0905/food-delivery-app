@@ -14,7 +14,7 @@ import DismissKeyboardView from '../components/DissmissKeyboardView';
 import axios, {AxiosError} from 'axios';
 import Config from 'react-native-config';
 import {RootStackParamList} from '../../AppInner';
-
+import AsyncStorage from '@react-native-async-storage/async-storage';
 type SignUpScreenProps = NativeStackScreenProps<RootStackParamList, 'SignUp'>;
 
 function SignUp({navigation}: SignUpScreenProps) {
