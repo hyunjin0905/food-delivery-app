@@ -28,8 +28,8 @@ const userSlice = createSlice({
     setMoney(state, action) {
       state.money = action.payload;
     },
-  }, // 동기액션
-  extraReducers: builder => {}, // 비동기 액션
+  },
+  extraReducers: builder => {},
 });
 
 export default userSlice;
