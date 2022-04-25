@@ -1,7 +1,6 @@
 import {createSlice} from '@reduxjs/toolkit';
 
 //store -> reducer(root, state)
-
 // 리덕스는 구조가 단방향 데이터의 흐름을 분석
 // action : state 를 바꾸는 행위/동작
 // dispatch: 그 액션을 실제로 실행하는 함수
